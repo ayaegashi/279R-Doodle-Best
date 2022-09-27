@@ -51,7 +51,7 @@ const Table = () => {
     return (
         // Create a table
         <table className='pollTable'>
-            <caption><h3>Select your prefereed times.</h3></caption>
+            <caption><h3>Select your preferred times.</h3></caption>
             <thead>
                 <tr>
                     {/* Display timeslot choices */}
