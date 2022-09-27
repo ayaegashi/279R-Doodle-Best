@@ -1,0 +1,93 @@
+/* Copyright (C) 2016 Sebastian Pipping <sebastian@pipping.org>
+** Licensed under GNU GPL v3 or later
+*/
+
+.App {
+  /* width: 500px; */
+  /* padding-left: 100px; */
+  /* padding-right: 100px; */
+  display: flex;
+  justify-content: center;
+  /* flex-direction: column; */
+}
+
+.btn {
+  font-weight: 400;
+  padding-top: 1px;
+  padding-right: 30px;
+  padding-left: 30px;
+  border: 2px gainsboro solid;
+}
+
+.optionLabel {
+  text-align: center;
+}
+
+td.person {
+  text-align: right;
+  padding-right: 1.5em !important;
+}
+
+.vote {
+  text-align: center;
+  height: 26px;
+  width: 100px;
+}
+
+.button {
+  text-align: center;
+  height: 26px;
+}
+
+.votedYes {
+  background-color: #dfd;
+}
+.votedNo {
+  background-color: #fdd;
+}
+.votedNeedBe {
+  background-color: #fed;
+}
+.yetToVote {
+  background-color: #dfdfdf;
+}
+
+[type="checkbox"]+label {
+  display: inline-block !important;
+  margin-top: 0.85em;
+  padding: 0 !important;
+  width: 1.3em;
+}
+
+
+tt, .monospace-text {
+  font-family:
+      /* Android */
+      Noto Mono, Roboto Mono, Droid Sans Mono,
+
+      /* Linux and friends */
+      Liberation Mono,
+          DejaVu Sans Mono, Bitstream Vera Sans Mono,
+          Linux Libertine Mono O,
+          Nimbus Mono L,
+          CMU Typewriter Text,
+          Source Code Pro,
+          Inconsolata,
+          Cousine,
+          Oxygen Mono,
+          Anonymous Pro,
+          PT Mono,
+          Ubuntu Mono,
+
+      /* macOS */
+      Consolas,
+
+      /* Windows */
+      Monaco, Lucida Console,
+
+      /* Core fonts */
+      Andale Mono, Courier New,
+
+      /* fallback */
+      monospace;
+}
