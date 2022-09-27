@@ -18,11 +18,11 @@ const Table = () => {
     const tableRows = tableData.map((entry) => {
         return (
             <tr>
-                <td>{entry[0]}</td>
-                <td>{symbols[entry[1]]}</td>
-                <td>{symbols[entry[2]]}</td>
-                <td>{symbols[entry[3]]}</td>
-                <td>{symbols[entry[4]]}</td>
+                <td className='person'>{entry[0]}</td>
+                <td className={`vote ${entry[1] === 0 ? "votedNo" : entry[1] === 1 ? "votedYes" : "votedNeedBe" }`} >{symbols[entry[1]]}</td>
+                <td className={`vote ${entry[2] === 0 ? "votedNo" : entry[2] === 1 ? "votedYes" : "votedNeedBe" }`}>{symbols[entry[2]]}</td>
+                <td className={`vote ${entry[3] === 0 ? "votedNo" : entry[3] === 1 ? "votedYes" : "votedNeedBe" }`}>{symbols[entry[3]]}</td>
+                <td className={`vote ${entry[4] === 0 ? "votedNo" : entry[4] === 1 ? "votedYes" : "votedNeedBe" }`}>{symbols[entry[4]]}</td>
             </tr>
         )
     });
@@ -34,7 +34,7 @@ const Table = () => {
     }
 
     return (
-        <table>
+        <table className='pollTable'>
             <thead>
                 <tr>
                     <td></td>

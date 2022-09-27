@@ -75,16 +75,16 @@ const Form = ({ submitFunc, sums, setSums }) => {
     return (
         submitted ?
         <></> :
-        <div className="App">
+        <>
             <tr>
                 <td><input type="text" value={name} onChange={ changeName } /></td>
-                <td><button onClick={() => updateChoice(choice1, 1)}>{ symbols[choice1] }</button></td>
-                <td><button onClick={() => updateChoice(choice2, 2)}>{ symbols[choice2] }</button></td>
-                <td><button onClick={() => updateChoice(choice3, 3)}>{ symbols[choice3] }</button></td>
-                <td><button onClick={() => updateChoice(choice4, 4)}>{ symbols[choice4] }</button></td>
+                <td><button className={`button btn vote ${choice1 === 0 ? "votedNo" : choice1 === 1 ? "votedYes" : "votedNeedBe" }`} onClick={() => updateChoice(choice1, 1)}>{ symbols[choice1] }</button></td>
+                <td><button className={`button btn vote ${choice2 === 0 ? "votedNo" : choice2 === 1 ? "votedYes" : "votedNeedBe" }`} onClick={() => updateChoice(choice2, 2)}>{ symbols[choice2] }</button></td>
+                <td><button className={`button btn vote ${choice3 === 0 ? "votedNo" : choice3 === 1 ? "votedYes" : "votedNeedBe" }`} onClick={() => updateChoice(choice3, 3)}>{ symbols[choice3] }</button></td>
+                <td><button className={`button btn vote ${choice4 === 0 ? "votedNo" : choice4 === 1 ? "votedYes" : "votedNeedBe" }`} onClick={() => updateChoice(choice4, 4)}>{ symbols[choice4] }</button></td>
             </tr>
-            <button className='btn' onClick={ addToTable }>Submit</button>
-        </div>
+            <button className='button btn' onClick={ addToTable }>Submit</button>
+        </>
     );
 }
 
