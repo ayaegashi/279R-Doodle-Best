@@ -10,7 +10,7 @@ Stylesheet adapted from https://github.com/hartwork/jawanndenn
 
 ## Key Distinguishing Characteristics from When2Meet
 
-* Discrete and disjoint timeslots (minimum of 30 mins) selected by poll creator
+* Discrete, disjoint timeslots (minimum of 30 mins) selected by poll creator. Users indicate their availability among a set of choices, as opposed to showing full availability within a time frame.
 * Intermediate vote between Yes and No (“If Need Be”)
 * Shows most popular option, numerically
 
