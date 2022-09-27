@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './index.css';
 
-const Form = ({ submitFunc }) => {
+const Form = ({ submitFunc, sums, setSums }) => {
     const [name, setName] = useState('');
     const [submitted, setSubmitted] = useState(false);
 
@@ -27,13 +27,48 @@ const Form = ({ submitFunc }) => {
         const newChoice = (currChoice + 1) % 3;
         if (choiceNum === 1) {
             setChoice1(newChoice);
-            console.log("hi");
+            
+            // Update counts
+            if (newChoice === 1) {
+                const newSums = [sums[0] + 1, sums[1], sums[2], sums[3]];
+                setSums(newSums);
+            } else if (newChoice === 2) {
+                const newSums = [sums[0] - 1, sums[1], sums[2], sums[3]];
+                setSums(newSums);
+            }
         } else if (choiceNum === 2) {
             setChoice2(newChoice);
+
+            // Update counts
+            if (newChoice === 1) {
+                const newSums = [sums[0], sums[1] + 1, sums[2], sums[3]];
+                setSums(newSums);
+            } else if (newChoice === 2) {
+                const newSums = [sums[0], sums[1] - 1, sums[2], sums[3]];
+                setSums(newSums);
+            }
         } else if (choiceNum === 3) {
             setChoice3(newChoice);
+
+            // Update counts
+            if (newChoice === 1) {
+                const newSums = [sums[0], sums[1], sums[2] + 1, sums[3]];
+                setSums(newSums);
+            } else if (newChoice === 2) {
+                const newSums = [sums[0], sums[1], sums[2] - 1, sums[3]];
+                setSums(newSums);
+            }
         } else {
             setChoice4(newChoice);
+
+            // Update counts
+            if (newChoice === 1) {
+                const newSums = [sums[0], sums[1], sums[2], sums[3] + 1];
+                setSums(newSums);
+            } else if (newChoice === 2) {
+                const newSums = [sums[0], sums[1], sums[2], sums[3] - 1];
+                setSums(newSums);
+            }
         }
     }
 
