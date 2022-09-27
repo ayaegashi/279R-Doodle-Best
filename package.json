@@ -1,8 +1,8 @@
 {
   "name": "279-doodle-best",
   "version": "0.1.0",
+  "homepage": "https://ayaegashi.github.io/279R-Doodle-Best",
   "private": true,
-  "homepage": "https://ayaegashi.github.io/279r-doodle",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
