@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/279r-doodle/static/css/main.6828c44c.css",
-    "main.js": "/279r-doodle/static/js/main.d8d183b0.js",
-    "index.html": "/279r-doodle/index.html",
-    "main.6828c44c.css.map": "/279r-doodle/static/css/main.6828c44c.css.map",
-    "main.d8d183b0.js.map": "/279r-doodle/static/js/main.d8d183b0.js.map"
+    "main.css": "/279R-Doodle-Best/static/css/main.6828c44c.css",
+    "main.js": "/279R-Doodle-Best/static/js/main.d8d183b0.js",
+    "index.html": "/279R-Doodle-Best/index.html",
+    "main.6828c44c.css.map": "/279R-Doodle-Best/static/css/main.6828c44c.css.map",
+    "main.d8d183b0.js.map": "/279R-Doodle-Best/static/js/main.d8d183b0.js.map"
   },
   "entrypoints": [
     "static/css/main.6828c44c.css",
