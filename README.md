@@ -1,6 +1,7 @@
-# Getting Started with Create React App
+# User-Testable Version of Doodle
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+I collaborated with RunLin Wang.
 
 ## Sources
 
